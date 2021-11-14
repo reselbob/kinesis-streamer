@@ -1,0 +1,34 @@
+{
+  "name": "kinesis-streamer",
+  "version": "1.0.0",
+  "description": "A project the demonstrates how create a kinesis client that sends log info back to an AWS Kinesis Stream",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test/streamer-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reselbob/kinesis-logger.git"
+  },
+  "keywords": [
+    "kinesis"
+  ],
+  "author": "Bob Reselman <reselbob@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reselbob/kinesis-streamer/issues"
+  },
+  "homepage": "https://github.com/reselbob/kinesis-streamer#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1028.0",
+    "cron": "^1.8.2",
+    "dotenv": "^10.0.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "uuid": "^8.3.2"
+  }
+}
