@@ -19,7 +19,7 @@ The tests that run in this project check that the credential information is avai
 
 Operationally this means that all the values assigned to the [required environment variables](https://github.com/reselbob/kinesis-streamer#configuring-the-environment-variables) work as expected.
 
-## Running the project
+# Running the project
 
 This project depends on the existence of an accessible Kinesis Stream running on AWS.
 
