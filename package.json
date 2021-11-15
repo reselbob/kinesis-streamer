@@ -12,7 +12,7 @@
     "url": "git+https://github.com/reselbob/kinesis-logger.git"
   },
   "keywords": [
-    "kinesis"
+    "kinesis", "streaming", "kinesis stream", "AWS"
   ],
   "author": "Bob Reselman <reselbob@gmail.com>",
   "license": "MIT",
