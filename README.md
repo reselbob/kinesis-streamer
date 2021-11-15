@@ -17,7 +17,7 @@ The name of a particular Kinesis Stream to bind to is defined by an environment 
 
 The tests that run in this project check that the credential information is available in the runtime environment. Also, a test will check that a ShardId is returned from the Kinesis Stream to which the application is bound.
 
-Operationally this means that all the values assigned to [required environment variables](https://github.com/reselbob/kinesis-streamer#configuring-the-environment-variables) work as expected.
+Operationally this means that all the values assigned to the [required environment variables](https://github.com/reselbob/kinesis-streamer#configuring-the-environment-variables) work as expected.
 
 ## Running the project
 
