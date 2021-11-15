@@ -15,6 +15,8 @@ The name of a particular Kinesis Stream to bind to is defined by an environment 
 
 `npm test`
 
+The tests that run in this project check that the crendentials information is available in the runtime environment. Also, a test will check that a ShardId is returned from the Kinesis Stream to which the application is configured.
+
 ## Running the project
 
 This project depends on the existence of an accessible Kinesis Stream running on AWS.
