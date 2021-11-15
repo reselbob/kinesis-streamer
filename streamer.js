@@ -6,10 +6,6 @@ const kinesis = new AWS.Kinesis();
 const {v4: uuidv4} = require('uuid');
 const {logger} = require('./logger');
 
-//Load the access credentials and region from
-//config file
-AWS.config.loadFromPath('./config.json');
-
 /**
  * Creates a structured message with random data
  * @param index, an index number to assign to each message
@@ -50,6 +46,7 @@ const createCronJob = async (streamName, numberOfMessages, shardID) => {
             Records: records,
             StreamName: streamName /* required */
         };
+        //AWS.config.loadFromPath('./config.json');
         await kinesis.putRecords(params).promise()
             .then(data => {
                 logger.info(JSON.stringify(data));

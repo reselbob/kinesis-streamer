@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const {stream, stopJobs} = require('./streamer');
 const {logger} = require('./logger');
 logger.info(`Starting streamer at ${new Date()}`);

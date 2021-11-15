@@ -1,4 +1,5 @@
 'use strict';
+require('dotenv').config();
 const chai = require('chai');
 const expect = require('chai').expect;
 const describe = require('mocha').describe;
@@ -12,6 +13,7 @@ const {logger} = require('../logger');
 describe('Streamer Tests: ', async () => {
 
     it('Can get credentials', async function () {
+
         AWS.config.getCredentials(function(err) {
             if (err){
                 logger.error(err.stack);
@@ -20,6 +22,7 @@ describe('Streamer Tests: ', async () => {
             else {
                 expect(AWS.config.credentials.accessKeyId).to.be.a('string')
                 logger.info(`Access key: ${AWS.config.credentials.accessKeyId}`);
+                logger.info(`Access key: ${AWS.config.credentials.secretAccessKey}`);
                 expect(AWS.config.region).to.be.a('string')
                 logger.info(`Region: ${AWS.config.region}`);
             }
@@ -27,6 +30,7 @@ describe('Streamer Tests: ', async () => {
     });
 
     it('Can get shardID', async function () {
+        AWS.config.loadFromPath('./config.json');
         let params = {
             StreamName: 'my-stream-kinesis'
         };
