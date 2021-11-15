@@ -1,5 +1,5 @@
 # kinesis-streamer
-A project that demonstrates an application that sends messages with random data continuously to a predefined AWS Kinesis Stream.
+A project that demonstrates an application that sends messages with structured, random data continuously to a predefined AWS Kinesis Stream.
 
 The way the application works is that it creates a number of CronJobs, with each CronJob running every second. The CronJob's logic sends one or many messages to a Kinesis Stream. This Kinesis Stream must be running under AWS before the application starts.
 
