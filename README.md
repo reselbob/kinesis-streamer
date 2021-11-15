@@ -25,7 +25,7 @@ This project depends on the existence of an accessible Kinesis Stream running on
 
 ## Creating the `config.json` file
 
-Once you get Kinesis Stream up and running, you need to create and configure the file `./config.json` within this project in order to provide AWS credentials and region to the application.
+Once you get a Kinesis Stream up and running, you'll need to create and configure the file `./config.json` within this project in order to provide the application with the required AWS credentials and region information.
 
 The structure of the file `./config.json` is as follows:
 
