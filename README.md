@@ -9,11 +9,11 @@ The name of a particular Kinesis Stream to bind to is also defined by an environ
 
 The file `.env` needs to be created and configured. (A section that follows describes the details of creating and configuring the file `.env`.) Also, overriding the default number of CronJobs that will run simultaneously and the number of messages that will be sent by each CronJobs are defined in the `.env` file. 
 
-## Installation
+# Installation
 
 `npm install`
 
-## Testing
+# Testing
 
 `npm test`
 
