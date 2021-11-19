@@ -1,6 +1,4 @@
 .idea
-config.json
-config.json.bak
 package-lock.json
 # Logs
 logs

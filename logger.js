@@ -8,7 +8,7 @@ const logFormat = winston.format.printf(info => {
     };`;
 });
 
-const logFilePath = `${__dirname}/myapp.log`;
+const logFilePath = `${__dirname}/logs/myapp.log`;
 
 const logger = winston.createLogger({
     level: global.loglevel || 'silly',
